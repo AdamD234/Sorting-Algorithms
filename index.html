@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorting Algorithms</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js" defer></script>
+        <script src="audio.js"></script>
+        <script src="sorts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="search-bar">
+                    <img src="searchIcon.svg" alt="Search">
+                    <form>
+                        <label for="tSearch">Search</label>
+                        <input type="search" name="tSearch" id="tSearch" placeholder="Search..." onsearch="cleared(this)">
+                    </form>
+                </div>
+                <div class="table">
+                    <div class="table-header">
+                        <div class="title up" onclick="changeSortOfSorts('name', this)">
+                            <p>Name</p>
+                            <img src="sortArrows.svg" alt="Sort Arrows">
+                        </div>
+                        <div class="title" onclick="changeSortOfSorts('timeComplexity', this)">
+                            <p>Time Complexity</p>
+                            <img src="sortArrows.svg" alt="Sort Arrows">
+                        </div>
+                        <div class="title" onclick="changeSortOfSorts('memory', this)">
+                            <p>Memory</p>
+                            <img src="sortArrows.svg" alt="Sort Arrows">
+                        </div>
+                    </div>
+                    <div class="table-body">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button button__secondary" onclick="shuffleArr();" onmousedown="addButtonDown(this)" onmouseleave="removeButtonDown(this)" onmouseup="removeButtonDown(this)" onmousemove="tooltipPosition(event,this)">
+                        <img src="diceIcon.svg" alt="Dice">
+                        <p>Shuffle Data</p>
+                    </div>
+                    <div class="button button__primary" onclick="startSort();" onmousedown="addButtonDown(this)" onmouseleave="removeButtonDown(this)" onmouseup="removeButtonDown(this)" onmousemove="tooltipPosition(event,this)">
+                        <img src="sortIcon.svg" alt="Sort">
+                        <p>Sort Data</p>
+                    </div>
+                </div>
+            </aside>
+            <section class="bars">
+
+            </section>
+        </main>
+    </body>
+</html>
