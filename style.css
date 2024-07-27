@@ -15,7 +15,7 @@ body {
     background: linear-gradient(#0d1321, #01011e);
     margin: 0;
     padding: 10dvh;
-    height: 100dvh;
+    min-height: 100dvh;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -27,6 +27,8 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 
@@ -256,6 +258,7 @@ section {
     flex: 1;
     display: flex;
     align-items: baseline;
+    min-width: 200px;
 }
 
 .bars div {
